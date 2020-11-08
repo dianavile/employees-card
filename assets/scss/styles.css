@@ -1,0 +1,126 @@
+/*google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
+/*variables css */
+:root {
+  /* Colors */
+  --first-color: #272A3A;
+  --first-color-light: #8A8EAA;
+  --first-color-lighten: #F8F8FC;
+  /* Font and typography */
+  --body-font: 'Ubuntu', sans-serif;
+  --normal-font-size: 1rem;
+  --smaller-font-size: .813rem;
+}
+
+/*Base */
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  background-color: var(--first-color-lighten);
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*drag and drop */
+.drop {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.drop__container {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1rem;
+  padding: 2rem;
+  -webkit-box-shadow: 4px 4px 16px #E1E1E1;
+          box-shadow: 4px 4px 16px #E1E1E1;
+  border-radius: 1rem;
+}
+
+.drop__card, .drop__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.drop__card {
+  width: 360px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .75rem 1.25rem .75rem .75rem;
+  background-color: var(--first-color-lighten);
+  -webkit-box-shadow: 4px 4px 16px #E1E1E1, -2px -2px 16px #FFF;
+          box-shadow: 4px 4px 16px #E1E1E1, -2px -2px 16px #FFF;
+  border-radius: 2.5rem;
+}
+
+.drop__img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.drop__name {
+  font-size: var(--normal-font-size);
+  color: var(--first-color);
+  font-weight: 500;
+}
+
+.drop__profession {
+  font-size: var(--smaller-font-size);
+  color: var(--first-color-light);
+}
+
+.drop__social {
+  margin: 0 .375rem;
+  color: var(--first-color-light);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.drop__social:hover {
+  color: var(--first-color);
+}
+
+/* Class name for the chosen item */
+.sortable-chosen {
+  -webkit-box-shadow: 8px 8px 32px #E1E1E1;
+          box-shadow: 8px 8px 32px #E1E1E1;
+}
+
+/* Class name for the dragging item */
+.sortable-drag {
+  opacity: 0;
+}
+/*# sourceMappingURL=styles.css.map */
